@@ -11,7 +11,7 @@ This anonymous repository contains the source code for the SIGIR 2022 submission
 - Obtain the data
   - According to the rule of anonymity, we will provide the link of the preprocessed dataset later
   - Decompress all data to the "data" directory
-- Prepare pretrained BERT
+- Prepare the pretrained BERT model
   - [BertModel](https://huggingface.co/bert-base-uncased)
   - [BertChinese](https://huggingface.co/bert-base-chinese)
   - Save these models to the "pretrained_model" directory 
