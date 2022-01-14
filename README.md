@@ -9,14 +9,17 @@ This anonymous repository contains the source code for the SIGIR 2022 submission
 
 ## Usage
 - Obtain the data
-  - For AOL dataset, please contact the author of [CARS](https://arxiv.org/pdf/1906.02329.pdf)
-  - For Tiangong dataset, download it from the [link](http://www.thuir.cn/tiangong-st/)
-  - Move all data to the "data" directory
+  - According to the rule of anonymity, we will provide the link of the preprocessed dataset later
+  - Decompress all data to the "data" directory
 - Prepare pretrained BERT
   - [BertModel](https://huggingface.co/bert-base-uncased)
   - [BertChinese](https://huggingface.co/bert-base-chinese)
   - Save these models to the "pretrained_model" directory 
-- Training model
+- Train the model
 ```
-python3 runModelCL.py
+python3 runModelCL.py --task aol/tiangong
+```
+- Test the model
+```
+python3 runModelCL.py --is_training False --task aol/tiangong
 ```
