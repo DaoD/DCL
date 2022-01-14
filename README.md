@@ -10,7 +10,7 @@ This anonymous repository contains the source code for the SIGIR 2022 submission
 ## Usage
 - Obtain the data
   - For AOL dataset, please contact the author of [CARS](https://arxiv.org/pdf/1906.02329.pdf)
-  - For Tiangong dataset, download from the [link](http://www.thuir.cn/tiangong-st/)
+  - For Tiangong dataset, download it from the [link](http://www.thuir.cn/tiangong-st/)
   - Move all data to the "data" directory
 - Prepare pretrained BERT
   - [BertModel](https://huggingface.co/bert-base-uncased)
