@@ -77,7 +77,7 @@ args = parser.parse_args()
 
 if args.task == "aol":
     args.per_gpu_batch_size = 20
-    args.pos_start_ratio = 0.2
+    args.pos_start_ratio = 0.3
     args.pos_ratio = 0.4
     args.neg_final_ratio = 0.7
     args.neg_ratio = 0.5
