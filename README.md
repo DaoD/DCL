@@ -1,5 +1,5 @@
 # DCL
-This anonymous repository contains the source code for the SIGIR 2022 submission "From Easy to Hard: A Dual Curriculum Learning Framework for Context-Aware Document Ranking".
+This anonymous repository contains the source code for the CIKM 2022 submission "From Easy to Hard: A Dual Curriculum Learning Framework for Context-Aware Document Ranking".
 
 ## Requirements
 - Python 3.6
