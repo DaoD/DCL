@@ -25,6 +25,9 @@ Authors: Yutao Zhu, Jian-Yun Nie, Yixuan Su, Haonan Chen, Xinyu Zhang, and Zhich
   - [BertModel](https://huggingface.co/bert-base-uncased)
   - [BertChinese](https://huggingface.co/bert-base-chinese)
   - Save these models to the "pretrained_model" directory 
+- Prepare the pretrained COCA model
+  - Download the contrastive pretrained model from the [link](https://github.com/DaoD/COCA)
+  - Save the checkpoint to the "pretrained_model" directory
 - Train the model (on AOL)
 ```
 python3 runModelCL.py --task aol --is_training --bert_model_path ./pretrained_model/BERT/ --pretrain_model_path ./pretrained_model/coca.aol
