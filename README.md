@@ -25,13 +25,13 @@ Authors: Yutao Zhu, Jian-Yun Nie, Yixuan Su, Haonan Chen, Xinyu Zhang, and Zhich
   - [BertModel](https://huggingface.co/bert-base-uncased)
   - [BertChinese](https://huggingface.co/bert-base-chinese)
   - Save these models to the "pretrained_model" directory 
-- Train the model
+- Train the model (on AOL)
 ```
-python3 runModelCL.py --task aol/tiangong
+python3 runModelCL.py --task aol --is_training --bert_model_path ./pretrained_model/BERT/ --pretrain_model_path ./pretrained_model/coca.aol
 ```
-- Test the model
+- Test the model (on AOL)
 ```
-python3 runModelCL.py --is_training False --task aol/tiangong
+python3 runModelCL.py --task aol
 ```
 
 ## Citations
