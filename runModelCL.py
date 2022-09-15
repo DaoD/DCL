@@ -24,7 +24,7 @@ parser.add_argument("--per_gpu_batch_size",
 parser.add_argument("--per_gpu_test_batch_size",
                     default=256,
                     type=int,
-                    help="The batch size.")
+                    help="The test batch size.")
 parser.add_argument("--learning_rate",
                     default=5e-5,
                     type=float,
@@ -60,11 +60,11 @@ parser.add_argument("--save_path",
 parser.add_argument("--score_file_path",
                     default="./output/",
                     type=str,
-                    help="The path to save output.")
+                    help="The path to save score file.")
 parser.add_argument("--pretrain_model_path",
                     default="",
                     type=str,
-                    help="The path of pretrained model.")
+                    help="The path of pretrained model (COCA).")
 parser.add_argument("--log_path",
                     default="./log/",
                     type=str,
@@ -72,7 +72,7 @@ parser.add_argument("--log_path",
 parser.add_argument("--bert_model_path",
                     default="/",
                     type=str,
-                    help="The path to save log.")
+                    help="The path of BERT model.")
 args = parser.parse_args()
 
 if args.task == "aol":
