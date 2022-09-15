@@ -36,6 +36,8 @@ python3 runModelCL.py --task aol --is_training --bert_model_path ./pretrained_mo
 ```
 python3 runModelCL.py --task aol --bert_model_path ./pretrained_model/BERT/ --pretrain_model_path ./pretrained_model/coca.aol
 ```
+- Test from our trained models
+  - We provide the [checkpoint]() of our trained models on both AOL and Tiangong-ST datasets for test
 
 ## Citations
 If you use the code and datasets, please cite the following paper:  
