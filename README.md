@@ -34,7 +34,7 @@ python3 runModelCL.py --task aol --is_training --bert_model_path ./pretrained_mo
 ```
 - Test the model (on AOL)
 ```
-python3 runModelCL.py --task aol
+python3 runModelCL.py --task aol --bert_model_path ./pretrained_model/BERT/ --pretrain_model_path ./pretrained_model/coca.aol
 ```
 
 ## Citations
