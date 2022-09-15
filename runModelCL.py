@@ -13,66 +13,21 @@ from tqdm import tqdm
 import os
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--is_training",
-                    default=True,
-                    type=bool,
-                    help="Training model or evaluating model?")
-parser.add_argument("--per_gpu_batch_size",
-                    default=20,
-                    type=int,
-                    help="The batch size.")
-parser.add_argument("--per_gpu_test_batch_size",
-                    default=256,
-                    type=int,
-                    help="The test batch size.")
-parser.add_argument("--learning_rate",
-                    default=5e-5,
-                    type=float,
-                    help="The initial learning rate for Adam.")
-parser.add_argument("--pos_start_ratio",
-                    default=0.33,
-                    type=float,
-                    help="")
-parser.add_argument("--pos_ratio",
-                    default=0.5,
-                    type=float,
-                    help="")
-parser.add_argument("--neg_final_ratio",
-                    default=0.5,
-                    type=float,
-                    help="")
-parser.add_argument("--neg_ratio",
-                    default=0.5,
-                    type=float,
-                    help="")
-parser.add_argument("--task",
-                    default="aol",
-                    type=str,
-                    help="Task")
-parser.add_argument("--epochs",
-                    default=6,
-                    type=int,
-                    help="Total number of training epochs to perform.")
-parser.add_argument("--save_path",
-                    default="./model/",
-                    type=str,
-                    help="The path to save model.")
-parser.add_argument("--score_file_path",
-                    default="./output/",
-                    type=str,
-                    help="The path to save score file.")
-parser.add_argument("--pretrain_model_path",
-                    default="",
-                    type=str,
-                    help="The path of pretrained model (COCA).")
-parser.add_argument("--log_path",
-                    default="./log/",
-                    type=str,
-                    help="The path to save log.")
-parser.add_argument("--bert_model_path",
-                    default="/",
-                    type=str,
-                    help="The path of BERT model.")
+parser.add_argument('--is_training', action='store_true')
+parser.add_argument("--per_gpu_batch_size", default=20, type=int, help="The batch size.")
+parser.add_argument("--per_gpu_test_batch_size", default=256, type=int, help="The test batch size.")
+parser.add_argument("--learning_rate", default=5e-5, type=float, help="The initial learning rate for Adam.")
+parser.add_argument("--pos_start_ratio", default=0.33, type=float)
+parser.add_argument("--pos_ratio", default=0.5, type=float,)
+parser.add_argument("--neg_final_ratio", default=0.5, type=float)
+parser.add_argument("--neg_ratio", default=0.5, type=float)
+parser.add_argument("--task", default="aol", type=str, help="Task")
+parser.add_argument("--epochs", default=6, type=int, help="Total number of training epochs to perform.")
+parser.add_argument("--save_path", default="./model/", type=str, help="The path to save model.")
+parser.add_argument("--score_file_path", default="./output/", type=str, help="The path to save score file.")
+parser.add_argument("--pretrain_model_path", default="", type=str, help="The path of pretrained model (COCA).")
+parser.add_argument("--log_path", default="./log/", type=str, help="The path to save log.")
+parser.add_argument("--bert_model_path", default="/", type=str, help="The path of BERT model.")
 args = parser.parse_args()
 
 if args.task == "aol":
