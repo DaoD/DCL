@@ -49,10 +49,13 @@ If you use the code and datasets, please cite the following paper:
                Haonan Chen and
                Xinyu Zhang and
                Zhicheng Dou},
-  title     = {From Easy to Hard: A Dual Curriculum Learning Framework for Context-Aware Document Ranking},
-  booktitle = {{CIKM} '22: The 31st {ACM} International Conference on Information
-               and Knowledge Management, Atlanta, GA, USA, October
-               17 - 21, 2022},
+  editor    = {Mohammad Al Hasan and
+               Li Xiong},
+  title     = {From Easy to Hard: {A} Dual Curriculum Learning Framework for Context-Aware
+               Document Ranking},
+  booktitle = {Proceedings of the 31st {ACM} International Conference on Information
+               {\&} Knowledge Management, Atlanta, GA, USA, October 17-21, 2022},
+  pages     = {2784--2794},
   publisher = {{ACM}},
   year      = {2022},
   url       = {https://doi.org/10.1145/3511808.3557328},
