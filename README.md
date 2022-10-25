@@ -26,7 +26,7 @@ Authors: Yutao Zhu, Jian-Yun Nie, Yixuan Su, Haonan Chen, Xinyu Zhang, and Zhich
   - [BertChinese](https://huggingface.co/bert-base-chinese)
   - Save these models to the "pretrained_model" directory 
 - Prepare the pretrained COCA model
-  - Download the contrastive pretrained model from the [link](https://github.com/DaoD/COCA)
+  - Download the contrastive pretrained model from the [link](https://drive.google.com/drive/folders/1kab_O1_9FePZ1JnXUL6EzFgrGZaPVIll?usp=sharing)
   - Save the checkpoint to the "pretrained_model" directory
 - Train the model (on AOL)
 ```
