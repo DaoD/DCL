@@ -26,7 +26,7 @@ Authors: Yutao Zhu, Jian-Yun Nie, Yixuan Su, Haonan Chen, Xinyu Zhang, and Zhich
   - [BertChinese](https://huggingface.co/bert-base-chinese)
   - Save these models to the "pretrained_model" directory 
 - Prepare the pretrained COCA model
-  - Download the contrastive pretrained model from the [link](https://drive.google.com/drive/folders/1kab_O1_9FePZ1JnXUL6EzFgrGZaPVIll?usp=sharing)
+  - Download the contrastive pretrained model from the [link](https://github.com/DaoD/COCA)
   - Save the checkpoint to the "pretrained_model" directory
 - Train the model (on AOL)
 ```
@@ -37,7 +37,7 @@ python3 runModelCL.py --task aol --is_training --bert_model_path ./pretrained_mo
 python3 runModelCL.py --task aol --bert_model_path ./pretrained_model/BERT/ --pretrain_model_path ./pretrained_model/coca.aol
 ```
 - Test from our trained models
-  - We provide the [checkpoint]() of our trained models on both AOL and Tiangong-ST datasets for test
+  - We provide the [checkpoint](https://drive.google.com/drive/folders/1kab_O1_9FePZ1JnXUL6EzFgrGZaPVIll?usp=sharing) of our trained models on both AOL and Tiangong-ST datasets for test
 
 ## Citations
 If you use the code and datasets, please cite the following paper:  
